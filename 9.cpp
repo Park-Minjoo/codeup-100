@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+    std::cout << n << std::endl;
+    return 0;
+}
