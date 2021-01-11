@@ -4,12 +4,21 @@
 using namespace std;
 
 int main() {
-    int n, i, sum = 0;
+    int n, i=1, sum = 0;
     cin >> n;
-
-    for (i = 1; sum >= n; i++){
-        sum = sum + i;
-        cout << "sum: " << sum << endl;
-    }
-   cout << i << endl;
+/*
+    for (i = 0; sum <= n; i++){
+        
+        if (sum >= n) cout << i-1 << endl;
+        sum += i;     
+    } 
+*/
+  while(true){
+      sum+=i;
+      if(sum>=n){ 
+        cout << i << endl;
+        break;}
+      else i++;
+  }  
+     
 } 
